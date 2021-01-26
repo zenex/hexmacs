@@ -1,0 +1,26 @@
+#+Title: HEXmacs CHANGELOG
+#+Author: SENEX @ [[https://xenobyte.xyz/projects/?nav=pocket_php][XENOBYTE.XYZ]]
+
+* VER 1.5 <2021-01-26 Tue 13:08>
+  - Purged deprecated files to clean the repo
+
+* VER 1.3 <2021-01-01 Fri 14:32>
+  - Changed to an .otb version of the tewi font
+  - Added more helpful comments to the custom load files
+
+* VER 1.22 <2020-11-10 Tue 20:01>
+  - Fixed broken links in the README
+  - Updated some preview images [[https://xenobyte.xyz/projects/?nav=hexmacs#previews][here]]
+
+* VER 1.2 <2020-11-05 Thu 13:06>
+  - Rebranded some comments
+  - Removed a couple of deprecated packages
+
+* VER 1.1 <2020-10-13 Tue 21:18>
+  - Updated HEXmacs to work with EMACS 27+
+  - Finished the installation guide [[https://xenobyte.xyz/projects/?nav=hexmacs][HERE]]
+  - Added more helpful comments to the configuration files in /.emacs.d/custom/
+
+* VER 1.0 <2020-07-25 Sat 17:58>
+  Moved the HEXmacs configuration our of the dotfiles project and into its own repo, it's easier to
+  manage the files this way.
