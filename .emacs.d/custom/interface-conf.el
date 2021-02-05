@@ -59,6 +59,10 @@
 ;; TEWI FONT
 (add-to-list 'default-frame-alist '(font . "tewi-9" ))
 (set-face-attribute 'default t :font "tewi-9" )
+;; Ac437 ATI 8x8 FONT
+;; (add-to-list 'default-frame-alist '(font . "Ac437 ATI 8x8-6" ))
+;; (set-face-attribute 'default t :font "Ac437 ATI 8x8-6" )
+
 ;; OHSNAP FONT
 ;; (add-to-list 'default-frame-alist '(font . "misc ohsnapu-9:bold" ))
 ;; (set-face-attribute 'default t :font "misc ohsnapu-9:bold" )
