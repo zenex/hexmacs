@@ -8,7 +8,7 @@
   the system it becomes quite apparent why an increasing amount of developers find
   it worthwhile to switch despite the relativelty steep learning curve.
   HEXmacs organizes the emacs files into an template that comes preconfigured with 
-  fully featured development environments for the languages used in the XENOBYTE.xyz
+  fully featured development environments for the languages used in the [[https://xenobyte.xyz][XENOBYTE.xyz]]
   projects plus a few, general purpose utilities.
 
   To manage all these packages, HEXmacs uses a very simple script that scans the
