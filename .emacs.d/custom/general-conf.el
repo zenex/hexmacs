@@ -195,13 +195,6 @@ the vertical drag is done."
 ;; orgmode extension
 (require 'org-journal)
 
-;; dumb-jump
-(require 'dumb-jump)
-(dumb-jump-mode)
-(global-set-key (kbd "M-1")   #'dumb-jump-go)
-(global-set-key (kbd "M-2")   #'dumb-jump-back)
-(global-set-key (kbd "M-3")   #'dumb-jump-quick-look)
-(global-set-key (kbd "M-4")   #'dumb-jump-go-prompt)
 
 ;; JAMAL MODE
 (require 'yaml-mode)

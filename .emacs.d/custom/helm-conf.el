@@ -38,8 +38,6 @@
 (add-hook 'php-mode-hook 'helm-gtags-mode)
 (add-hook 'prog-mode-hook 'helm-gtags-mode)
 
-(define-key helm-gtags-mode-map (kbd "C-c g a") 'helm-gtags-tags-in-this-function)
-
 (define-key helm-gtags-mode-map (kbd "C-j") 'helm-gtags-select)
 (define-key helm-gtags-mode-map (kbd "C-c g a") 'helm-gtags-tags-in-this-function)
 (define-key helm-gtags-mode-map (kbd "C-c g r") 'helm-gtags-find-rtags)
