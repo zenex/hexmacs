@@ -134,7 +134,7 @@
     majapahit-theme
     powerline
     org-journal
-    ;; dumb-jump ;; DEPRECATED
+    dumb-jump
     epa
     yaml-mode
     cl-lib

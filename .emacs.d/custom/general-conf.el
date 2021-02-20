@@ -170,6 +170,12 @@ the vertical drag is done."
 (global-set-key (kbd "M-<down>") #'drag-stuff-down)
 
 
+;; dumb-jump
+(add-hook 'xref-backend-functions #'dumb-jump-xref-activate)
+(global-set-key (kbd "M-1") #'dumb-jump-go)
+(global-set-key (kbd "M-2") #'dumb-jump-back)
+(global-set-key (kbd "M-3") #'dumb-jump-go-prompt)
+
 ;;nlinum
 ;; Preset `nlinum-format' for minimum width.
 (defun my-nlinum-mode-hook ()
