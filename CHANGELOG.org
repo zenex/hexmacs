@@ -2,8 +2,8 @@
 #+Author: SENEX @ [[https://xenobyte.xyz/projects/?nav=pocket_php][XENOBYTE.XYZ]]
 
 * VER 1.6 <2021-02-19 Fri 17:23>
-  - Removed the deprecated dumb-jump package and configuration
-  - Keys M-1 to 4 currently freed
+  - Removed deprecated dumb-jump functions
+  - Keys M-4 and on currently freed
 * VER 1.5 <2021-01-26 Tue 13:08>
   - Purged deprecated files to clean the repo
 
