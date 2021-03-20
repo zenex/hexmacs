@@ -147,6 +147,7 @@
     rebox2
     ggtags
     highlight-parentheses
+    pdf-tools
     ;; ;;THEMES -- ONLY ENABLE ONCE TO DOWNLOAD THEM THEN SET WITH M-X CUSTOMIZE-THEMES
     base16-theme
     abyss-theme
