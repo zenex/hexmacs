@@ -14,15 +14,16 @@
 (add-hook 'after-init-hook 'global-company-mode)
 
 (setq company-show-numbers t
-      company-minimum-prefix-length 2
+      company-minimum-prefix-length 1
       company-tooltip-limit 50
-      company-idle-delay 0.1)
+      company-idle-delay 0.0)
 
 (setq company-auto-complete t)
 (setq company-tooltip-align-annotations t)
 
 ;; CAPF
 (add-to-list 'company-backends '(company-capf company-dabbrev))
+;; (add-to-list 'company-backends '(company-capf))
 
 ;;CTAGS
 (require 'company-ctags)
@@ -116,7 +117,7 @@
 (setq company-c-headers-path-system 'my-company-c-headers-get-system-path)
 
 ;; Activate irony-mode on arduino-mode
-(add-hook 'arduino-mode-hook 'irony-mode)
+;; (add-hook 'arduino-mode-hook 'irony-mode)
 
 ;; GLSL completion
 ;; requires glslang https://github.com/KhronosGroup/glslang

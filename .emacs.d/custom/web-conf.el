@@ -130,14 +130,28 @@
       ;; don't set flymake or lsp-ui so the default linter doesn't get trampled
       lsp-diagnostic-package :none)
 
-(setq lsp-ui-sideline-enable t
-      ;; disable flycheck setup so default linter isn't trampled
-      lsp-ui-flycheck-enable nil
-      lsp-ui-sideline-show-symbol nil
-      lsp-ui-sideline-show-hover nil
-      lsp-ui-sideline-show-code-actions nil
-      lsp-ui-peek-enable nil
-      lsp-ui-imenu-enable nil
-      lsp-ui-doc-enable nil)
+(setq lsp-ui-doc-enable t
+      lsp-ui-doc-use-childframe t
+      lsp-ui-doc-position 'top
+      lsp-ui-doc-include-signature t
+      lsp-ui-sideline-enable nil
+      lsp-ui-flycheck-enable t
+      lsp-ui-flycheck-list-position 'right
+      lsp-ui-flycheck-live-reporting t
+      lsp-ui-peek-enable t
+      lsp-ui-peek-list-width 60
+      lsp-ui-peek-peek-height 25)
+
+(add-hook 'lsp-mode-hook 'lsp-ui-mode)
+
+;; (setq lsp-ui-sideline-enable t
+;;       ;; disable flycheck setup so default linter isn't trampled
+;;       lsp-ui-flycheck-enable nil
+;;       lsp-ui-sideline-show-symbol nil
+;;       lsp-ui-sideline-show-hover nil
+;;       lsp-ui-sideline-show-code-actions nil
+;;       lsp-ui-peek-enable nil
+;;       lsp-ui-imenu-enable nil
+;;       lsp-ui-doc-enable nil)
 
 (provide 'web-conf)

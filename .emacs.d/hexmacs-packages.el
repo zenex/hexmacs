@@ -17,6 +17,9 @@
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
+(custom-set-variables
+ '(gnutls-algorithm-priority "normal:-vers-tls1.3"))
+
 
 
 ;; added by Package.el.  This must come before configurations of
@@ -40,6 +43,7 @@
     helm-gtags
     helm-themes
     helm-tramp
+    helm-lsp
     swiper-helm
     ;;IVY
     ivy
@@ -74,17 +78,19 @@
     irony ;; irony-install-server
     function-args
     glsl-mode ;; technically its own language but w/e
+    modern-cpp-font-lock
     ;;PHP
     php-mode
     ac-php-core
     ac-php
-    php-extras
+    ;;php-extras
     ;;HTML CSS
     web-mode
     ;;JS
-    json-process-client
+    ;;json-process-client
     lsp-mode
     lsp-ui
+    lsp-treemacs
     js2-mode
     js2-refactor
     xref-js2
@@ -148,6 +154,8 @@
     ggtags
     highlight-parentheses
     pdf-tools
+    dap-mode
+    ;;eglot
     ;; ;;THEMES -- ONLY ENABLE ONCE TO DOWNLOAD THEM THEN SET WITH M-X CUSTOMIZE-THEMES
     base16-theme
     abyss-theme

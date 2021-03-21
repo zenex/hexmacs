@@ -120,6 +120,7 @@ static char *gnus-pointer[] = {
 \"###....####.######\",
 \"###..######.######\",
 \"###########.######\" };") t)
+ '(gnutls-algorithm-priority "normal:-vers-tls1.3")
  '(helm-gtags-auto-update t)
  '(helm-gtags-ignore-case t)
  '(helm-gtags-path-style 'relative)

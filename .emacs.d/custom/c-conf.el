@@ -21,6 +21,30 @@
 (setq c-default-style "linux" ; set style to "linux"
       c-basic-offset 4)
 
+;; (require 'lsp-mode)
+;; (require 'lsp-ui)
+;; (add-hook 'c-mode-hook 'lsp)
+;; (add-hook 'c++-mode-hook 'lsp)
+
+;; (setq lsp-clients-clangd-args
+;;           '("-j=2"
+;;             "--background-index"
+;;             "--clang-tidy"
+;;             "--completion-style=bundled"
+;;             "--pch-storage=memory"
+;;             "--header-insertion=never"
+;;             "--header-insertion-decorators=0"))
+
+;; (setq gc-cons-threshold (* 100 1024 1024)
+;;       read-process-output-max (* 1024 1024)
+;;       treemacs-space-between-root-nodes nil
+;;       company-idle-delay 0.0
+;;       company-minimum-prefix-length 2
+;;       lsp-idle-delay 0.1)  ;; clangd is fast
+;; (setq lsp-clients-clangd-args
+;;       '("--header-insertion=never"))
+
+
 ;;Irony
 (add-hook 'c++-mode-hook 'irony-mode)
 (add-hook 'c-mode-hook 'irony-mode)
@@ -99,6 +123,9 @@
 ;; (add-to-list 'auto-mode-alist '("\\.frag\\'" . glsl-mode))
 ;; (add-to-list 'auto-mode-alist '("\\.geom\\'" . glsl-mode))
 
+;; Syntax highlighting support for "Modern C++"
+(require 'modern-cpp-font-lock)
+(add-hook 'c++-mode-hook #'modern-c++-font-lock-mode)
 
 ;;C/C++ --CONFIGS-- END
 
