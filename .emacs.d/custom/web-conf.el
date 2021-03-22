@@ -30,18 +30,18 @@
 (autoload 'php-mode "php-mode" "Major mode for editing php code." t)
 (add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
 
-;; ac-php
-  (add-hook 'php-mode-hook
-            '(lambda ()
-               (auto-complete-mode t)
-               (require 'ac-php)
-               (setq ac-sources  '(ac-source-php ) )
-               (yas-global-mode 1)
+;; ;; ac-php
+;;   (add-hook 'php-mode-hook
+;;             '(lambda ()
+;;                (auto-complete-mode t)
+;;                (require 'ac-php)
+;;                (setq ac-sources  '(ac-source-php ) )
+;;                (yas-global-mode 1)
 
-               ;; (ac-php-core-eldoc-setup ) ;; BROKEN!
-               (define-key php-mode-map  (kbd "C-]") 'ac-php-find-symbol-at-point)   ;goto define
-               (define-key php-mode-map  (kbd "C-t") 'ac-php-location-stack-back   ) ;go back
-               ))
+;;                ;; (ac-php-core-eldoc-setup ) ;; BROKEN!
+;;                (define-key php-mode-map  (kbd "C-]") 'ac-php-find-symbol-at-point)   ;goto define
+;;                (define-key php-mode-map  (kbd "C-t") 'ac-php-location-stack-back   ) ;go back
+;;                ))
 
 
 
@@ -124,6 +124,7 @@
 (add-hook 'js2-mode-hook #'lsp-deferred)
 (add-hook 'css-mode-hook #'lsp-deferred)
 (add-hook 'web-mode-hook #'lsp-deferred)
+(add-hook 'php-mode-hook #'lsp-deferred)
 
 (setq lsp-auto-configure t
       lsp-auto-guess-root t

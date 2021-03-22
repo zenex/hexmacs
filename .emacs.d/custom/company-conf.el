@@ -45,7 +45,7 @@
              (require 'company-php)
              (company-mode t)
              (set (make-local-variable 'company-backends)
-                   '((php-extras-company company-dabbrev-code) company-capf company-files))))
+                   '((company-capf company-dabbrev-code) company-files))))
 
 
 ;;emoji
