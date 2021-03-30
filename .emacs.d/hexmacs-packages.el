@@ -155,6 +155,7 @@
     highlight-parentheses
     pdf-tools
     dap-mode
+    multiple-cursors
     ;;eglot
     ;; ;;THEMES -- ONLY ENABLE ONCE TO DOWNLOAD THEM THEN SET WITH M-X CUSTOMIZE-THEMES
     base16-theme

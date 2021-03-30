@@ -97,7 +97,8 @@
 (require 'company-irony)
 (require 'company-irony-c-headers)
 ;; (require 'company-c-headers)
-(add-to-list 'company-backends '(company-irony-c-headers company-irony))
+;; (add-to-list 'company-backends '(company-irony-c-headers company-irony))
+(add-to-list 'company-backends '(company-irony company-irony-c-headers))
 
 ;; If you installed this package from without MELPA, you may need
 (require 'company-arduino)

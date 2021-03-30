@@ -26,12 +26,13 @@
 (require 'smartparens-config)
 (show-smartparens-global-mode +1)
 (smartparens-global-mode 1)
-;; when you press RET, the curly braces automatically
-;; add another newline
+;;when you press RET, the curly braces automatically
+;;add another newline
 (sp-with-modes '(c-mode c++-mode)
   (sp-local-pair "{" nil :post-handlers '(("||\n[i]" "RET")))
   (sp-local-pair "/*" "*/" :post-handlers '((" | " "SPC")
                                             ("* ||\n[i]" "RET"))))
+
 ;;Undo-tree
 (require 'undo-tree)
 (global-undo-tree-mode 1)
@@ -260,5 +261,13 @@ the vertical drag is done."
 ;; all-the-icons give emacs less lame icons
 ;; must run M-x all-the-icons-install-fonts toggle install fonts!
 (require 'all-the-icons)
+;; multiple cursors
+(require 'multiple-cursors)
+(global-set-key (kbd "C-c m") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 (provide 'general-conf)
+
+

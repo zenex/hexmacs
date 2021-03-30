@@ -87,7 +87,8 @@
 (semantic-add-system-include "/usr/include/boost" 'c++-mode)
 ;; (semantic-add-system-include "~/linux/kernel")
 ;; (semantic-add-system-include "~/linux/include")
-(semantic-add-system-include "~/Qt/5.15.1/gcc_64/include/" 'c++-mode)
+(semantic-add-system-include "~/Qt/5.15.2/gcc_64/include/" 'c++-mode)
+(semantic-add-system-include "~/Qt/6.0.2/gcc_64/include/" 'c++-mode)
 (semantic-add-system-include "/usr/include/c++/10.2.0" 'c++-mode)
 
 ;;show function name on top of buffer
