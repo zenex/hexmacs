@@ -1,6 +1,11 @@
 #+Title: HEXmacs CHANGELOG
 #+Author: SENEX @ [[https://xenobyte.xyz/projects/?nav=pocket_php][XENOBYTE.XYZ]]
 
+* VER 1.8 <2021-04-14 Wed 19:54>
+  - Isolated all LSP related configs to custom/lsp-config.el
+  - Removed many of lsp's unnecessary features, including lsp-ui
+  - Changed the company-complete hotkey to M-TAB
+
 * VER 1.77 <2021-03-29 Mon 19:04>
   - Added multiple-cursors to the package list
 

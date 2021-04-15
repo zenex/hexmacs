@@ -89,7 +89,6 @@
     ;;JS
     ;;json-process-client
     lsp-mode
-    lsp-ui
     lsp-treemacs
     js2-mode
     js2-refactor
