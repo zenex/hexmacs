@@ -14,12 +14,23 @@
 (add-hook 'after-init-hook 'global-company-mode)
 
 (setq company-show-numbers t
-      company-minimum-prefix-length 1
-      company-tooltip-limit 50
+      company-minimum-prefix-length 2
+      company-tooltip-limit 12
       company-idle-delay 0.0)
-
-(setq company-auto-complete t)
 (setq company-tooltip-align-annotations t)
+(setq company-auto-complete nil)
+
+(with-eval-after-load 'company
+  (define-key company-active-map (kbd "<return>") nil)
+  (define-key company-active-map (kbd "RET") nil)
+  (define-key company-active-map (kbd "SPC") nil)
+  (define-key company-active-map (kbd "<space>") nil)
+  (define-key company-active-map (kbd "M-<tab>") #'company-complete-selection))
+
+;; Don't auto complete numbers
+(setq company-dabbrev-char-regexp "[A-z:-]")
+
+;; (global-set-key (kbd "C-\<tab\>") 'company-complete)
 
 ;; CAPF
 (add-to-list 'company-backends '(company-capf company-dabbrev))

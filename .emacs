@@ -17,6 +17,7 @@
 (require 'helm-conf)
 ;; (require 'ivy-conf)
 (require 'flycheck-conf)
+(require 'lsp-conf)
 (require 'company-conf)
 (require 'yasnippet-conf)
 (require 'asm-conf)

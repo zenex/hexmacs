@@ -1,6 +1,9 @@
 #+Title: HEXmacs CHANGELOG
 #+Author: SENEX @ [[https://xenobyte.xyz/projects/?nav=pocket_php][XENOBYTE.XYZ]]
 
+* VER 1.77 <2021-03-29 Mon 19:04>
+  - Added multiple-cursors to the package list
+
 * VER 1.7 <2021-03-21 Sun 18:01>
   - Removed php-extras and ac-php
   - Added lsp to php via lsp-capf

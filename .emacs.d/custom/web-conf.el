@@ -118,32 +118,27 @@
 ;; And make sure to have the root modules at $HOME/.node_modules/bin/tern
 (require 'json-process-client) ;; Usually note required but as of 11/Oct/2020 Indium fails without it
 (require 'indium)
-(require 'lsp-mode)
-(require 'lsp-ui)
+;; (require 'lsp-mode)
 
-(add-hook 'js2-mode-hook #'lsp-deferred)
-(add-hook 'css-mode-hook #'lsp-deferred)
-(add-hook 'web-mode-hook #'lsp-deferred)
-(add-hook 'php-mode-hook #'lsp-deferred)
+;; (add-hook 'js2-mode-hook #'lsp-deferred)
+;; (add-hook 'css-mode-hook #'lsp-deferred)
+;; (add-hook 'web-mode-hook #'lsp-deferred)
+;; (add-hook 'php-mode-hook #'lsp-deferred)
 
-(setq lsp-auto-configure t
-      lsp-auto-guess-root t
-      ;; don't set flymake or lsp-ui so the default linter doesn't get trampled
-      lsp-diagnostic-package :none)
+;; (setq lsp-auto-configure t
+;;       lsp-auto-guess-root t
+;;       ;; don't set flymake or lsp-ui so the default linter doesn't get trampled
+;;       lsp-diagnostic-package :none)
+;; ;; Disable the annoying top bar
+;; (setq lsp-signature-auto-activate nil)
+;; (setq lsp-headerline-breadcrumb-enable nil)
+;; (setq lsp-ui-sideline-enable nil)
+;; (setq lsp-ui-sideline-show-code-actions nil)
+;; (setq lsp-ui-sideline-enable nil)
+;; (setq lsp-lens-enable nil)
+;; (setq lsp-ui-doc-show-with-cursor nil)
 
-(setq lsp-ui-doc-enable t
-      lsp-ui-doc-use-childframe t
-      lsp-ui-doc-position 'top
-      lsp-ui-doc-include-signature t
-      lsp-ui-sideline-enable nil
-      lsp-ui-flycheck-enable t
-      lsp-ui-flycheck-list-position 'right
-      lsp-ui-flycheck-live-reporting t
-      lsp-ui-peek-enable t
-      lsp-ui-peek-list-width 60
-      lsp-ui-peek-peek-height 25)
 
-(add-hook 'lsp-mode-hook 'lsp-ui-mode)
 
 ;; (setq lsp-ui-sideline-enable t
 ;;       ;; disable flycheck setup so default linter isn't trampled
