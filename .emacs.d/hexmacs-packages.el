@@ -71,6 +71,7 @@
     flycheck
     flycheck-irony
     flycheck-tip
+    flycheck-kotlin
     ;;Yasnippet
     yasnippet
     yasnippet-snippets
@@ -84,10 +85,12 @@
     ac-php-core
     ac-php
     ;;php-extras
+    ;;Kotlin / Android
+    kotlin-mode
     ;;HTML CSS
     web-mode
     ;;JS
-    ;;json-process-client
+    json-process-client
     lsp-mode
     lsp-treemacs
     js2-mode

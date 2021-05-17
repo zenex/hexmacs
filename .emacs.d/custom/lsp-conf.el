@@ -11,11 +11,13 @@
 (add-hook 'css-mode-hook #'lsp-deferred)
 (add-hook 'web-mode-hook #'lsp-deferred)
 (add-hook 'php-mode-hook #'lsp-deferred)
+(add-hook 'python-mode-hook #'lsp-deferred)
 
 (setq lsp-auto-configure t
       lsp-auto-guess-root t
       ;; don't set flymake or lsp-ui so the default linter doesn't get trampled
       lsp-diagnostic-package :none)
+
 ;; Disable the annoying top bar
 (setq lsp-signature-auto-activate nil)
 (setq lsp-headerline-breadcrumb-enable nil)
@@ -25,7 +27,16 @@
 (setq lsp-lens-enable nil)
 (setq lsp-ui-doc-show-with-cursor nil)
 
+(setq lsp-completion-provider t)
+(setq lsp-completion-show-detail t)
+(setq lsp-completion-show-kind t)
+(setq lsp-signature-auto-activate t)
+(setq lsp-eldoc-enable-hover t)
 
+
+(setq lsp-enable-file-swatchers nil)
+
+;; (setq lsp-completion-provider :none)
 
 ;; (setq lsp-ui-sideline-enable t
 ;;       ;; disable flycheck setup so default linter isn't trampled
