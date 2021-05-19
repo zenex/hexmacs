@@ -30,7 +30,7 @@
 ;; Don't auto complete numbers
 (setq company-dabbrev-char-regexp "[A-z:-]")
 
-;; (global-set-key (kbd "C-\<tab\>") 'company-complete)
+(global-set-key (kbd "C-;") 'company-complete)
 
 ;; CAPF
 (add-to-list 'company-backends '(company-capf company-dabbrev))
@@ -56,7 +56,7 @@
              (require 'company-php)
              (company-mode t)
              (set (make-local-variable 'company-backends)
-                   '((company-capf company-dabbrev-code) company-files))))
+                   '((company-ac-php-backend company-capf company-dabbrev-code) company-files))))
 
 
 ;;emoji

@@ -33,7 +33,6 @@
 (setq lsp-signature-auto-activate t)
 (setq lsp-eldoc-enable-hover t)
 
-
 (setq lsp-enable-file-swatchers nil)
 
 ;; (setq lsp-completion-provider :none)
