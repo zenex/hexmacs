@@ -1,4 +1,4 @@
-# [HEXmacs](https://xenobyte.xyz.localhost/projects/?nav=hexmacs)
+# [HEXmacs](https://xenobyte.xyz/projects/?nav=hexmacs)
 
 EMACS is perhaps the most powerful tool in a programmers arsenal, though its power 
 lies hidden deep within layers of initial complexity, as one learns the basics of
