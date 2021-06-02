@@ -51,12 +51,20 @@
 ;; M-x php-extras-generate-eldoc RET
 ;; For local auto complete add a .ac-php-conf.json file to the project root
 ;; then run ac-php-remake-tags to generate a template, then configure it
+;; LSP
 (add-hook 'php-mode-hook
           '(lambda ()
              (require 'company-php)
              (company-mode t)
              (set (make-local-variable 'company-backends)
-                   '((company-ac-php-backend company-capf company-dabbrev-code) company-files))))
+                   '((company-capf company-dabbrev-code) company-files))))
+;; ac-php
+;; (add-hook 'php-mode-hook
+;;           '(lambda ()
+;;              (require 'company-php)
+;;              (company-mode t)
+;;              (set (make-local-variable 'company-backends)
+;;                    '((company-ac-php-backend company-capf company-dabbrev-code) company-files))))
 
 
 ;;emoji
