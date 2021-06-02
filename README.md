@@ -40,7 +40,7 @@ VER 1.22
 
 ## Installation & Setup
 
-Visit [xenobyte.xyz](https://xenobyte.xyz/projects/?nav=hexmacs** for a complete setup guide.
+Visit [xenobyte.xyz](https://xenobyte.xyz/projects/?nav=hexmacs) for a complete setup guide.
 
 ## F.A.Q. & Troubleshooting
 
