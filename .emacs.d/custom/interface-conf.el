@@ -66,8 +66,8 @@
 ;; OHSNAP FONT
 ;; (add-to-list 'default-frame-alist '(font . "misc ohsnapu-9:bold" ))
 ;; (set-face-attribute 'default t :font "misc ohsnapu-9:bold" )
-(add-to-list 'default-frame-alist '(font . "misc ohsnapu-9" ))
-(set-face-attribute 'default t :font "misc ohsnapu-9" )
+;; (add-to-list 'default-frame-alist '(font . "misc ohsnapu-9" ))
+;; (set-face-attribute 'default t :font "misc ohsnapu-9" )
 
 ;;Theme (Overrides them one selected include M-x customize-themes)
 ;;(load-theme 'majapahit-dark t)
