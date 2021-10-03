@@ -1,9 +1,12 @@
 #+Title: HEXmacs CHANGELOG
 #+Author: SENEX @ [[https://xenobyte.xyz/projects/?nav=pocket_php][XENOBYTE.XYZ]]
 
+* VER 1.90 <2021-10-02 Sat 19:26>
+  - Added a default C++ version setting to irony-mode (defaults to -std=c++2a)
+  - Currently using lsp for C/C++ autocomplete
+
 * VER 1.89 <2021-05-18 Tue 21:57>
   - PHP lsp server, IPH has stability issues, managing between ac-php and lsp for the time being
-
     
 * VER 1.88 <2021-05-17 Mon 14:05>
   - Further customized lsp config, file watchers disabled
