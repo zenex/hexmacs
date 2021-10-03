@@ -46,24 +46,26 @@
 
 
 ;;Irony
-(add-hook 'c++-mode-hook 'irony-mode)
-(add-hook 'c-mode-hook 'irony-mode)
-(add-hook 'objc-mode-hook 'irony-mode)
+;; (add-hook 'c++-mode-hook 'irony-mode)
+;; (add-hook 'c-mode-hook 'irony-mode)
+;; (add-hook 'objc-mode-hook 'irony-mode)
 
-;; replace the `completion-at-point' and `complete-symbol' bindings in
-;; irony-mode's buffers by irony-mode's function
-(defun my-irony-mode-hook ()
-  (define-key irony-mode-map [remap completion-at-point]
-    'irony-completion-at-point-async)
-  (define-key irony-mode-map [remap complete-symbol]
-    'irony-completion-at-point-async))
-(add-hook 'irony-mode-hook 'my-irony-mode-hook)
-(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+;; ;; replace the `completion-at-point' and `complete-symbol' bindings in
+;; ;; irony-mode's buffers by irony-mode's function
+;; (defun my-irony-mode-hook ()
+;;   (define-key irony-mode-map [remap completion-at-point]
+;;     'irony-completion-at-point-async)
+;;   (define-key irony-mode-map [remap complete-symbol]
+;;     'irony-completion-at-point-async))
+;; (add-hook 'irony-mode-hook 'my-irony-mode-hook)
+;; (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
 
-;; Use compilation database first, clang_complete as fallback.
-(setq-default irony-cdb-compilation-databases '(irony-cdb-libclang
-                                                irony-cdb-clang-complete))
-(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+;; ;; Use compilation database first, clang_complete as fallback.
+;; (setq-default irony-cdb-compilation-databases '(irony-cdb-libclang
+;;                                                 irony-cdb-clang-complete))
+;; (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+
+;; (setq irony-additional-clang-options '("-std=c++2a"))
 
 ;; For local auto cmplete make sure to use BEAR to
 ;; generate an appropriate compile_commands.json

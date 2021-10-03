@@ -35,6 +35,19 @@
 
 (setq lsp-enable-file-swatchers nil)
 
+(add-hook 'c-mode-hook 'lsp)
+(add-hook 'c++-mode-hook 'lsp)
+
+(setq lsp-clients-clangd-args
+          '("-j=2"
+            "--background-index"
+            "--clang-tidy"
+            "--completion-style=bundled"
+            "--pch-storage=memory"
+            "--header-insertion=never"
+            "--header-insertion-decorators=0"))
+
+
 ;; (setq lsp-completion-provider :none)
 
 ;; (setq lsp-ui-sideline-enable t
