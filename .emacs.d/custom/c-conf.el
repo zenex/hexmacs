@@ -89,9 +89,9 @@
 (semantic-add-system-include "/usr/include/boost" 'c++-mode)
 ;; (semantic-add-system-include "~/linux/kernel")
 ;; (semantic-add-system-include "~/linux/include")
-(semantic-add-system-include "~/Qt/5.15.2/gcc_64/include/" 'c++-mode)
-(semantic-add-system-include "~/Qt/6.0.2/gcc_64/include/" 'c++-mode)
-(semantic-add-system-include "/usr/include/c++/10.2.0" 'c++-mode)
+(semantic-add-system-include "~/Qt/5.15.11/gcc_64/include/" 'c++-mode)
+(semantic-add-system-include "~/Qt/6.2.0/gcc_64/include/" 'c++-mode)
+(semantic-add-system-include "/usr/include/c++/11.1.0" 'c++-mode)
 
 ;;show function name on top of buffer
 (add-to-list 'semantic-default-submodes 'global-semantic-stickyfunc-mode)
@@ -116,7 +116,7 @@
 (set-default 'semantic-case-fold t)
 (require 'semantic/bovine/c)
 (add-to-list 'semantic-lex-c-preprocessor-symbol-file
-             "/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include/stddef.h")
+             "/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h")
 
 ;; Mostly use it with C++ and SkeletonGL, might as well add it here
 ;; (require 'glsl-mode)

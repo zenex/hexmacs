@@ -137,7 +137,6 @@
     symon
     mode-icons
     move-text
-    nlinum
     browse-kill-ring
     majapahit-theme
     powerline

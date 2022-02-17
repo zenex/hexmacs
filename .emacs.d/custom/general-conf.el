@@ -177,18 +177,6 @@ the vertical drag is done."
 (global-set-key (kbd "M-2") #'dumb-jump-back)
 (global-set-key (kbd "M-3") #'dumb-jump-go-prompt)
 
-;;nlinum
-;; Preset `nlinum-format' for minimum width.
-(defun my-nlinum-mode-hook ()
-  (when nlinum-mode
-    (setq-local nlinum-format
-                (concat "%" (number-to-string
-                             ;; Guesstimate number of buffer lines.
-                             (ceiling (log (max 1 (/ (buffer-size) 80)) 10)))
-                        "d"))))
-(add-hook 'nlinum-mode-hook #'my-nlinum-mode-hook)
-(global-nlinum-mode 1)
-
 ;;browse kil ring
 (require 'browse-kill-ring)
 ;;(global-set-key (kbd "C-c k") 'browse-kill-ring)
@@ -267,6 +255,10 @@ the vertical drag is done."
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
+;; display-line-numbers
+;; Highlights the active buffer's row number
+(global-display-line-numbers-mode 1)
 
 (provide 'general-conf)
 
